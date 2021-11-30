@@ -1,0 +1,33 @@
+package:
+  name: deck_of_cardsK
+  version: 0.0.2
+source:
+  sha256: 73857dbd42c9aa4f7b54c0f1c2ed4a866d494b16b9c1bd02667f129df106e206
+  url: https://files.pythonhosted.org/packages/d6/fa/1112bd1287cda91dead7f10fecc55e11a5ccd316128c35359eb1e35a9397/deck_of_cardsK-0.0.2.tar.gz
+about:
+  dev_url: https://SanderML.github.io
+  doc_url: https://SanderML.github.io
+  home: https://SanderML.github.io
+  license: Apache Software
+  license_family: APACHE
+  summary: '"A minimal example of nbdev using code from Allen Downey''s Think Python
+    2nd Ed"'
+build:
+  noarch: python
+  number: '0'
+  script: '{{ PYTHON }} -m pip install . -vv'
+extra:
+  recipe-maintainers:
+  - SanderML
+requirements:
+  host:
+  - pip
+  - python
+  - packaging
+  run:
+  - pip
+  - python
+  - packaging
+test:
+  imports:
+  - deck_of_cardsK
